@@ -7,7 +7,7 @@ from PIL import Image
 def get_text_from_image(image_file):
     return pytesseract.image_to_string(Image.open(image_file))
 
-def extractFrames(in_gif='current_recipe.gif', out_folder='images'):
+def extract_frames(in_gif='current_recipe.gif', out_folder='images'):
     frame = Image.open(in_gif)
     nframes = 0
     while frame:

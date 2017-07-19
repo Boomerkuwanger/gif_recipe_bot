@@ -1,7 +1,7 @@
 import os
 import praw
 import time
-from image_handler import download_gif, extractFrames, get_text_from_image
+from image_handler import download_gif, extract_frames, get_text_from_image
 
 reddit = praw.Reddit('gif_recipes_bot')
 
@@ -13,7 +13,7 @@ def main(reddit=reddit):
     for submission in gif_recipes_subreddit.hot(limit=10):
         if submission.url[-4:] == 'gifv':
             download_gif(submission.url[0:-1])  # download the .gif not .gifv
-            extractFrames()
+            extract_frames()
             for f in os.listdir('images'):
                 print('-' * 20, f, '-' * 20)
                 if f != '.placeholder':
