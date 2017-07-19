@@ -1,0 +1,6 @@
+[gif_recipes_bot]
+client_id=foo
+client_secret=bar
+username=herp
+password=derp
+user_agent=yolo
