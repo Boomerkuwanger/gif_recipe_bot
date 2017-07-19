@@ -1,0 +1,4 @@
+Pillow==4.2.1
+praw==5.0.1
+pytesseract==0.1.7
+requests==2.18.1
